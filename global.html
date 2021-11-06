@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <title>Global Namespace</title>
+    
+
+    <link rel="stylesheet" href="_static/css/redactor.css" type="text/css" />
+
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+    
+    <link rel="stylesheet" href="_static/doxyrest-pygments.css" type="text/css" />
+    
+
+    
+    <link rel="index" title="Index" href="genindex.html"/>
+    <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="fmtparser  documentation" href="index.html"/>
+    <link rel="next" title="enum fmt_status" href="enum_fmt_status.html"/>
+    <link rel="prev" title="struct fmt_spec" href="struct_fmt_spec.html"/> 
+</head>
+
+<body role="document">
+     
+
+    
+<a href="#" id="js-navigation-toggle" class="navigation-toggle">
+    <i class="mdi mdi-menu"></i><i class="mdi mdi-close"></i>
+</a>
+
+<section class="site-sidebar">
+
+<nav>
+
+
+    <a href="index.html" class="branding-link">
+    
+    
+    
+        <img src="_static/fmtparser.png" class="logo" />
+    
+    
+        
+        
+    
+    </a>
+
+    
+<section role="search">
+    <form action="search.html" method="get" class="site-searchform">
+        <input type="text" name="q" placeholder="Search in documentation" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+</section>
+
+
+
+    <section class="site-nav">
+    
+    
+        <p class="caption"><span class="caption-text">Core API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="example.html">Simple API usage example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_fmt_parser.html">Parser API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_fmt_util.html">Utility functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_fmt_spec.html">Format specifier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_fmt_spec_api.html">Specifier API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced topics</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Global Namespace</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_fmt_status.html">enum fmt_status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#detailed-documentation">Detailed Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#typedefs">Typedefs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+    
+    </section>
+
+</nav>
+
+</section>
+
+    <main class="site-main" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+<nav class="site-breadcrumbs">
+    <ul>
+    
+        <li>
+            <a href="index.html">Documentation</a> /
+        </li>
+        
+        <li class="site-breadcrumbs__leaf">Global Namespace</li>
+    
+    </ul>
+</nav>
+        <section class="site-content">
+            <div class="container">
+                
+  <span class="target" id="global"></span><div class="section" id="global-namespace">
+<span id="index-0"></span><h1>Global Namespace<a class="headerlink" href="#global-namespace" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="c1">// typedefs</span>
+
+<span class="k">typedef</span> <span class="kt">bool</span> <a class="reference internal" href="#doxid-fmt-bool-8h-1a17ae672029ff4eef7aaf3332ac3955cb"><span class="std std-ref">fmt_bool</span></a><span></span><span class="p">;</span>
+<span class="k">typedef</span> <span class="kt">char</span> <a class="reference internal" href="group_fmt_spec.html#doxid-group-fmt-spec-1ga2c58053187af69849e7c6950b590f85f"><span class="std std-ref">fmt_char</span></a><span></span><span class="p">;</span>
+<span class="k">typedef</span> <span class="k">struct</span> <a class="reference internal" href="struct_fmt_spec.html#doxid-structfmt-spec"><span class="std std-ref">fmt_spec</span></a><span></span> <a class="reference internal" href="group_fmt_spec.html#doxid-group-fmt-spec-1ga0ac5e440156439f9e79545d857291966"><span class="std std-ref">fmt_spec</span></a><span></span><span class="p">;</span>
+<span class="k">typedef</span> <span class="k">enum</span> <a class="reference internal" href="enum_fmt_flag.html#doxid-group-fmt-spec-api-1ga5eb2c0200a9f50528e96f2bd27fb674c"><span class="std std-ref">fmt_flag</span></a><span></span> <a class="reference internal" href="group_fmt_spec_api.html#doxid-group-fmt-spec-api-1ga08961889b334db27554f1834b2e73566"><span class="std std-ref">fmt_flag</span></a><span></span><span class="p">;</span>
+<span class="k">typedef</span> <span class="k">enum</span> <a class="reference internal" href="enum_fmt_spec_kind.html#doxid-group-fmt-spec-kind-1ga92e060efd69d2d6ed1e263cdaed98803"><span class="std std-ref">fmt_spec_kind</span></a><span></span> <a class="reference internal" href="group_fmt_spec_kind.html#doxid-group-fmt-spec-kind-1ga50de4bdd755ad58cf2d12dc9587c6330"><span class="std std-ref">fmt_spec_kind</span></a><span></span><span class="p">;</span>
+<span class="k">typedef</span> <span class="k">enum</span> <a class="reference internal" href="enum_fmt_spec_len.html#doxid-group-fmt-spec-len-1ga418d74483195eface4dc3e0119fd4b4f"><span class="std std-ref">fmt_spec_len</span></a><span></span> <a class="reference internal" href="group_fmt_spec_len.html#doxid-group-fmt-spec-len-1ga36e03a3a1053c49cbae692ebb0cea3d0"><span class="std std-ref">fmt_spec_len</span></a><span></span><span class="p">;</span>
+<span class="k">typedef</span> <span class="k">enum</span> <a class="reference internal" href="enum_fmt_spec_type.html#doxid-group-fmt-spec-type-1ga84eab3977aabc3ce9dbb2fb979adc2c3"><span class="std std-ref">fmt_spec_type</span></a><span></span> <a class="reference internal" href="group_fmt_spec_type.html#doxid-group-fmt-spec-type-1ga6bc3bec3e5fe79aa5158e273cbd14e6b"><span class="std std-ref">fmt_spec_type</span></a><span></span><span class="p">;</span>
+<span class="k">typedef</span> <span class="k">enum</span> <a class="reference internal" href="enum_fmt_status.html#doxid-fmt-status-8h-1a799588c25c0aa0e01fed1ab04354b0be"><span class="std std-ref">fmt_status</span></a><span></span> <a class="reference internal" href="#doxid-fmt-status-8h-1a93ff026c2005e85a470fba3c9847e812"><span class="std std-ref">fmt_status</span></a><span></span><span class="p">;</span>
+
+<span class="c1">// enums</span>
+
+<span class="k">enum</span> <a class="reference internal" href="enum_fmt_flag.html#doxid-group-fmt-spec-api-1ga5eb2c0200a9f50528e96f2bd27fb674c"><span class="std std-ref">fmt_flag</span></a><span></span><span class="p">;</span>
+<span class="k">enum</span> <a class="reference internal" href="enum_fmt_spec_kind.html#doxid-group-fmt-spec-kind-1ga92e060efd69d2d6ed1e263cdaed98803"><span class="std std-ref">fmt_spec_kind</span></a><span></span><span class="p">;</span>
+<span class="k">enum</span> <a class="reference internal" href="enum_fmt_spec_len.html#doxid-group-fmt-spec-len-1ga418d74483195eface4dc3e0119fd4b4f"><span class="std std-ref">fmt_spec_len</span></a><span></span><span class="p">;</span>
+<span class="k">enum</span> <a class="reference internal" href="enum_fmt_spec_type.html#doxid-group-fmt-spec-type-1ga84eab3977aabc3ce9dbb2fb979adc2c3"><span class="std std-ref">fmt_spec_type</span></a><span></span><span class="p">;</span>
+<span class="k">enum</span> <a class="reference internal" href="enum_fmt_status.html#doxid-fmt-status-8h-1a799588c25c0aa0e01fed1ab04354b0be"><span class="std std-ref">fmt_status</span></a><span></span><span class="p">;</span>
+
+<span class="c1">// structs</span>
+
+<span class="k">struct</span> <a class="reference internal" href="struct_fmt_spec.html#doxid-structfmt-spec"><span class="std std-ref">fmt_spec</span></a><span></span><span class="p">;</span>
+
+<span class="c1">// global functions</span>
+
+<span class="doxyrest-code-target target" id="doxid-cmakelists-8txt-1a427def457c33ff3e46ff8b848fb2e2c1"><span></span><span class="n">cmake_minimum_required</span></span><span></span><span class="p">(</span><span class="n">VERSION</span> <span class="mf">3.</span> <span class="mi">16</span><span class="p">);</span>
+<span class="kt">int</span> <span class="doxyrest-code-target target" id="doxid-example-8c-1ae66f6b31b5ad750f1fe042a706a4e3d4"><span></span><span class="n">main</span></span><span></span><span class="p">();</span>
+<span class="kt">void</span> <a class="reference internal" href="group_fmt_parser.html#doxid-group-fmt-parser-1gac8156e2d605bba5c22cce29e5b0a7109"><span class="std std-ref">fmt_spec_init</span></a><span></span><span class="p">(</span><a class="reference internal" href="struct_fmt_spec.html#doxid-structfmt-spec"><span class="std std-ref">fmt_spec</span></a><span></span><span class="o">*</span> <span class="n">spec</span><span class="p">);</span>
+<a class="reference internal" href="enum_fmt_status.html#doxid-fmt-status-8h-1a799588c25c0aa0e01fed1ab04354b0be"><span class="std std-ref">fmt_status</span></a><span></span> <a class="reference internal" href="group_fmt_parser.html#doxid-group-fmt-parser-1gaacffa3f20519a9219354e7bf7c53dbfe"><span class="std std-ref">fmt_read_one</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="group_fmt_spec.html#doxid-group-fmt-spec-1ga2c58053187af69849e7c6950b590f85f"><span class="std std-ref">fmt_char</span></a><span></span><span class="o">**</span> <span class="n">fmt</span><span class="p">,</span> <a class="reference internal" href="struct_fmt_spec.html#doxid-structfmt-spec"><span class="std std-ref">fmt_spec</span></a><span></span><span class="o">*</span> <span class="n">spec</span><span class="p">);</span>
+<a class="reference internal" href="#doxid-fmt-bool-8h-1a17ae672029ff4eef7aaf3332ac3955cb"><span class="std std-ref">fmt_bool</span></a><span></span> <a class="reference internal" href="group_fmt_parser.html#doxid-group-fmt-parser-1gafa17e58fa99dac05f1f9fdfc8b081693"><span class="std std-ref">fmt_read_is_ok</span></a><span></span><span class="p">(</span><a class="reference internal" href="enum_fmt_status.html#doxid-fmt-status-8h-1a799588c25c0aa0e01fed1ab04354b0be"><span class="std std-ref">fmt_status</span></a><span></span> <span class="n">status</span><span class="p">);</span>
+<a class="reference internal" href="struct_fmt_spec.html#doxid-structfmt-spec"><span class="std std-ref">fmt_spec</span></a><span></span><span class="o">*</span> <a class="reference internal" href="group_fmt_spec_api.html#doxid-group-fmt-spec-api-1gada6b42b7ec00657ffde6f3de661a1232"><span class="std std-ref">fmt_spec_alloc</span></a><span></span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+<span class="kt">void</span> <a class="reference internal" href="group_fmt_spec_api.html#doxid-group-fmt-spec-api-1ga6775dbfd3e25e651118419d66ae60f3d"><span class="std std-ref">fmt_spec_free</span></a><span></span><span class="p">(</span><a class="reference internal" href="struct_fmt_spec.html#doxid-structfmt-spec"><span class="std std-ref">fmt_spec</span></a><span></span><span class="o">*</span> <span class="n">spec</span><span class="p">);</span>
+<span class="kt">char</span><span class="o">**</span> <a class="reference internal" href="group_fmt_spec_api.html#doxid-group-fmt-spec-api-1gaf79292dc5472b0b185a537cae7894289"><span class="std std-ref">fmt_str_alloc</span></a><span></span><span class="p">(</span><a class="reference internal" href="group_fmt_spec.html#doxid-group-fmt-spec-1ga2c58053187af69849e7c6950b590f85f"><span class="std std-ref">fmt_char</span></a><span></span><span class="o">*</span> <span class="n">str</span><span class="p">);</span>
+<span class="kt">void</span> <a class="reference internal" href="group_fmt_spec_api.html#doxid-group-fmt-spec-api-1ga282a51e1c362e68130af4d26387c2ac2"><span class="std std-ref">fmt_str_free</span></a><span></span><span class="p">(</span><a class="reference internal" href="group_fmt_spec.html#doxid-group-fmt-spec-1ga2c58053187af69849e7c6950b590f85f"><span class="std std-ref">fmt_char</span></a><span></span><span class="o">**</span> <span class="n">str_ptr</span><span class="p">);</span>
+<span class="kt">int32_t</span> <a class="reference internal" href="group_fmt_spec_api.html#doxid-group-fmt-spec-api-1ga939f7e802f1c740e4a259113bfe752c3"><span class="std std-ref">fmt_spec_get_start_position</span></a><span></span><span class="p">(</span><a class="reference internal" href="struct_fmt_spec.html#doxid-structfmt-spec"><span class="std std-ref">fmt_spec</span></a><span></span><span class="o">*</span> <span class="n">spec</span><span class="p">,</span> <a class="reference internal" href="group_fmt_spec.html#doxid-group-fmt-spec-1ga2c58053187af69849e7c6950b590f85f"><span class="std std-ref">fmt_char</span></a><span></span><span class="o">**</span> <span class="n">str</span><span class="p">);</span>
+<span class="kt">int32_t</span> <a class="reference internal" href="group_fmt_spec_api.html#doxid-group-fmt-spec-api-1ga1254a5b3b73cb4e66decee7de3d5f475"><span class="std std-ref">fmt_spec_get_end_position</span></a><span></span><span class="p">(</span><a class="reference internal" href="struct_fmt_spec.html#doxid-structfmt-spec"><span class="std std-ref">fmt_spec</span></a><span></span><span class="o">*</span> <span class="n">spec</span><span class="p">,</span> <a class="reference internal" href="group_fmt_spec.html#doxid-group-fmt-spec-1ga2c58053187af69849e7c6950b590f85f"><span class="std std-ref">fmt_char</span></a><span></span><span class="o">**</span> <span class="n">str</span><span class="p">);</span>
+<span class="kt">uint32_t</span> <a class="reference internal" href="group_fmt_spec_api.html#doxid-group-fmt-spec-api-1ga88ccef675ed67f6549c7eb68d2b33864"><span class="std std-ref">fmt_spec_get_kind</span></a><span></span><span class="p">(</span><a class="reference internal" href="struct_fmt_spec.html#doxid-structfmt-spec"><span class="std std-ref">fmt_spec</span></a><span></span><span class="o">*</span> <span class="n">spec</span><span class="p">);</span>
+<span class="kt">uint32_t</span> <a class="reference internal" href="group_fmt_spec_api.html#doxid-group-fmt-spec-api-1gaf8938c15425f88698e80246071ba1278"><span class="std std-ref">fmt_spec_get_parameter</span></a><span></span><span class="p">(</span><a class="reference internal" href="struct_fmt_spec.html#doxid-structfmt-spec"><span class="std std-ref">fmt_spec</span></a><span></span><span class="o">*</span> <span class="n">spec</span><span class="p">);</span>
+<span class="kt">uint32_t</span> <a class="reference internal" href="group_fmt_spec_api.html#doxid-group-fmt-spec-api-1ga06c94e8934b8bb1a565307fe117d7dbe"><span class="std std-ref">fmt_spec_get_width</span></a><span></span><span class="p">(</span><a class="reference internal" href="struct_fmt_spec.html#doxid-structfmt-spec"><span class="std std-ref">fmt_spec</span></a><span></span><span class="o">*</span> <span class="n">spec</span><span class="p">);</span>
+<span class="kt">uint32_t</span> <a class="reference internal" href="group_fmt_spec_api.html#doxid-group-fmt-spec-api-1ga4c3ca02fd6919eaff159847a3fb91889"><span class="std std-ref">fmt_spec_get_precision</span></a><span></span><span class="p">(</span><a class="reference internal" href="struct_fmt_spec.html#doxid-structfmt-spec"><span class="std std-ref">fmt_spec</span></a><span></span><span class="o">*</span> <span class="n">spec</span><span class="p">);</span>
+<span class="kt">uint32_t</span> <a class="reference internal" href="group_fmt_spec_api.html#doxid-group-fmt-spec-api-1gab5a4b590df4080a34644078af24919d2"><span class="std std-ref">fmt_spec_get_length</span></a><span></span><span class="p">(</span><a class="reference internal" href="struct_fmt_spec.html#doxid-structfmt-spec"><span class="std std-ref">fmt_spec</span></a><span></span><span class="o">*</span> <span class="n">spec</span><span class="p">);</span>
+<span class="kt">uint32_t</span> <a class="reference internal" href="group_fmt_spec_api.html#doxid-group-fmt-spec-api-1gaa0f7b7154a19b8abcf043217d5c62a5f"><span class="std std-ref">fmt_spec_get_type</span></a><span></span><span class="p">(</span><a class="reference internal" href="struct_fmt_spec.html#doxid-structfmt-spec"><span class="std std-ref">fmt_spec</span></a><span></span><span class="o">*</span> <span class="n">spec</span><span class="p">);</span>
+<a class="reference internal" href="#doxid-fmt-bool-8h-1a17ae672029ff4eef7aaf3332ac3955cb"><span class="std std-ref">fmt_bool</span></a><span></span> <a class="reference internal" href="group_fmt_spec_api.html#doxid-group-fmt-spec-api-1ga776c256831fad467d2db5ffc931bab5d"><span class="std std-ref">fmt_spec_get_flag</span></a><span></span><span class="p">(</span><a class="reference internal" href="struct_fmt_spec.html#doxid-structfmt-spec"><span class="std std-ref">fmt_spec</span></a><span></span><span class="o">*</span> <span class="n">spec</span><span class="p">,</span> <a class="reference internal" href="enum_fmt_flag.html#doxid-group-fmt-spec-api-1ga5eb2c0200a9f50528e96f2bd27fb674c"><span class="std std-ref">fmt_flag</span></a><span></span> <span class="n">flag</span><span class="p">);</span>
+<a class="reference internal" href="enum_fmt_status.html#doxid-fmt-status-8h-1a799588c25c0aa0e01fed1ab04354b0be"><span class="std std-ref">fmt_status</span></a><span></span> <a class="reference internal" href="group_fmt_util.html#doxid-group-fmt-util-1ga78dec0463ce743affa763beecbfde89f"><span class="std std-ref">fmt_spec_print</span></a><span></span><span class="p">(</span><a class="reference internal" href="struct_fmt_spec.html#doxid-structfmt-spec"><span class="std std-ref">fmt_spec</span></a><span></span><span class="o">*</span> <span class="n">spec</span><span class="p">,</span> <span class="kt">FILE</span><span class="o">*</span> <span class="n">file</span><span class="p">);</span>
+<span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <a class="reference internal" href="group_fmt_util.html#doxid-group-fmt-util-1gaf34eeca324fbb5f9603f8df345e1e96e"><span class="std std-ref">fmt_spec_len2str</span></a><span></span><span class="p">(</span><a class="reference internal" href="enum_fmt_spec_len.html#doxid-group-fmt-spec-len-1ga418d74483195eface4dc3e0119fd4b4f"><span class="std std-ref">fmt_spec_len</span></a><span></span> <span class="n">len</span><span class="p">);</span>
+<span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <a class="reference internal" href="group_fmt_util.html#doxid-group-fmt-util-1ga5557090a337d297ba6048742b740cf27"><span class="std std-ref">fmt_spec_type2str</span></a><span></span><span class="p">(</span><a class="reference internal" href="enum_fmt_spec_type.html#doxid-group-fmt-spec-type-1ga84eab3977aabc3ce9dbb2fb979adc2c3"><span class="std std-ref">fmt_spec_type</span></a><span></span> <span class="n">type</span><span class="p">);</span>
+<span class="k">static</span> <a class="reference internal" href="enum_fmt_status.html#doxid-fmt-status-8h-1a799588c25c0aa0e01fed1ab04354b0be"><span class="std std-ref">fmt_status</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-parser-8c-1a40b4f38d8f4a67c437abdd8cdaa6008e"><span></span><span class="n">fmt_read_parameter</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="group_fmt_spec.html#doxid-group-fmt-spec-1ga2c58053187af69849e7c6950b590f85f"><span class="std std-ref">fmt_char</span></a><span></span><span class="o">**</span> <span class="n">fmt</span><span class="p">,</span> <a class="reference internal" href="struct_fmt_spec.html#doxid-structfmt-spec"><span class="std std-ref">fmt_spec</span></a><span></span><span class="o">*</span> <span class="n">spec</span><span class="p">);</span>
+<span class="k">static</span> <a class="reference internal" href="enum_fmt_status.html#doxid-fmt-status-8h-1a799588c25c0aa0e01fed1ab04354b0be"><span class="std std-ref">fmt_status</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-parser-8c-1a5084ba369c0627c889f271c27c8f9d80"><span></span><span class="n">fmt_read_flags</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="group_fmt_spec.html#doxid-group-fmt-spec-1ga2c58053187af69849e7c6950b590f85f"><span class="std std-ref">fmt_char</span></a><span></span><span class="o">**</span> <span class="n">fmt</span><span class="p">,</span> <a class="reference internal" href="struct_fmt_spec.html#doxid-structfmt-spec"><span class="std std-ref">fmt_spec</span></a><span></span><span class="o">*</span> <span class="n">spec</span><span class="p">);</span>
+<span class="k">static</span> <a class="reference internal" href="enum_fmt_status.html#doxid-fmt-status-8h-1a799588c25c0aa0e01fed1ab04354b0be"><span class="std std-ref">fmt_status</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-parser-8c-1a98445c8e2a0a70466a97c9458044df68"><span></span><span class="n">fmt_read_width</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="group_fmt_spec.html#doxid-group-fmt-spec-1ga2c58053187af69849e7c6950b590f85f"><span class="std std-ref">fmt_char</span></a><span></span><span class="o">**</span> <span class="n">fmt</span><span class="p">,</span> <a class="reference internal" href="struct_fmt_spec.html#doxid-structfmt-spec"><span class="std std-ref">fmt_spec</span></a><span></span><span class="o">*</span> <span class="n">spec</span><span class="p">);</span>
+<span class="k">static</span> <a class="reference internal" href="enum_fmt_status.html#doxid-fmt-status-8h-1a799588c25c0aa0e01fed1ab04354b0be"><span class="std std-ref">fmt_status</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-parser-8c-1a86112ee9a30979f8fbc0d6c91c282a6d"><span></span><span class="n">fmt_read_precision</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="group_fmt_spec.html#doxid-group-fmt-spec-1ga2c58053187af69849e7c6950b590f85f"><span class="std std-ref">fmt_char</span></a><span></span><span class="o">**</span> <span class="n">fmt</span><span class="p">,</span> <a class="reference internal" href="struct_fmt_spec.html#doxid-structfmt-spec"><span class="std std-ref">fmt_spec</span></a><span></span><span class="o">*</span> <span class="n">spec</span><span class="p">);</span>
+<span class="k">static</span> <a class="reference internal" href="enum_fmt_status.html#doxid-fmt-status-8h-1a799588c25c0aa0e01fed1ab04354b0be"><span class="std std-ref">fmt_status</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-parser-8c-1a825134e35966d87f122420751cb286fd"><span></span><span class="n">fmt_read_length</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="group_fmt_spec.html#doxid-group-fmt-spec-1ga2c58053187af69849e7c6950b590f85f"><span class="std std-ref">fmt_char</span></a><span></span><span class="o">**</span> <span class="n">fmt</span><span class="p">,</span> <a class="reference internal" href="struct_fmt_spec.html#doxid-structfmt-spec"><span class="std std-ref">fmt_spec</span></a><span></span><span class="o">*</span> <span class="n">spec</span><span class="p">);</span>
+<span class="k">static</span> <a class="reference internal" href="enum_fmt_status.html#doxid-fmt-status-8h-1a799588c25c0aa0e01fed1ab04354b0be"><span class="std std-ref">fmt_status</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-parser-8c-1a04251ced1ba23672caae29054e384f61"><span></span><span class="n">fmt_read_type</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="group_fmt_spec.html#doxid-group-fmt-spec-1ga2c58053187af69849e7c6950b590f85f"><span class="std std-ref">fmt_char</span></a><span></span><span class="o">**</span> <span class="n">fmt</span><span class="p">,</span> <a class="reference internal" href="struct_fmt_spec.html#doxid-structfmt-spec"><span class="std std-ref">fmt_spec</span></a><span></span><span class="o">*</span> <span class="n">spec</span><span class="p">);</span>
+<span class="k">static</span> <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-spec-api-8c-1a91b77f22af3d05fd55f33eb9ee4fe7e7"><span></span><span class="n">fmt_str_len</span></span><span></span><span class="p">(</span><a class="reference internal" href="group_fmt_spec.html#doxid-group-fmt-spec-1ga2c58053187af69849e7c6950b590f85f"><span class="std std-ref">fmt_char</span></a><span></span><span class="o">*</span> <span class="n">str</span><span class="p">);</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-util-8c-1a4663ac92102a3f4e8bcb8015c99b5b2d"><span></span><span class="n">print_str_from_to</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="group_fmt_spec.html#doxid-group-fmt-spec-1ga2c58053187af69849e7c6950b590f85f"><span class="std std-ref">fmt_char</span></a><span></span><span class="o">*</span> <span class="n">start</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="group_fmt_spec.html#doxid-group-fmt-spec-1ga2c58053187af69849e7c6950b590f85f"><span class="std std-ref">fmt_char</span></a><span></span><span class="o">*</span> <span class="n">end</span><span class="p">,</span> <span class="kt">FILE</span><span class="o">*</span> <span class="n">f</span><span class="p">);</span>
+
+<span class="c1">// macros</span>
+
+<span class="cp">#define </span><span class="doxyrest-code-target target" id="doxid-parser-8c-1a0fd3f43beb0ece53039d98dc795686f6"><span></span><span class="n">CASE_DOUBLE</span></span><span></span><span class="p">(</span><span class="n">_char</span><span class="p">,</span> <span class="n">_projected_type1</span><span class="p">,</span> <span class="n">_projected_type2</span><span class="p">)</span>
+<span class="cp">#define </span><span class="doxyrest-code-target target" id="doxid-parser-8c-1a6f64baaf9b10ec4707ebff2eff47387c"><span></span><span class="n">CASE_SINGLE</span></span><span></span><span class="p">(</span><span class="n">_char</span><span class="p">,</span> <span class="n">_projected_type1</span><span class="p">)</span>
+<span class="cp">#define </span><span class="doxyrest-code-target target" id="doxid-parser-8c-1a5f85ab8c6fd09b4f88e10d1c15ad4d52"><span></span><span class="n">CASE_SINGULAR</span></span><span></span><span class="p">(</span><span class="n">_char</span><span class="p">,</span> <span class="n">_projected_type</span><span class="p">)</span>
+<span class="cp">#define </span><span class="doxyrest-code-target target" id="doxid-debug-internal-8h-1ae8924623ca601364965e3d88fb7f40fa"><span></span><span class="n">DBG</span></span><span></span><span class="p">(...)</span>
+<span class="cp">#define </span><a class="reference internal" href="group_fmt_spec.html#doxid-group-fmt-spec-1ga4b67d92635dcc1af2776f2fdfa33067d"><span class="std std-ref">FMT_CHAR_CONV</span></a><span></span><span class="p">(</span><span class="n">__chr</span><span class="p">)</span>
+<span class="cp">#define </span><a class="reference internal" href="group_fmt_spec.html#doxid-group-fmt-spec-1gae760f6a95479e528fbbf5261c2c02a43"><span class="std std-ref">FMT_CHAR_TYPE</span></a><span></span>
+<span class="cp">#define </span><span class="doxyrest-code-target target" id="doxid-group-fmt-spec-1gaef1d8819750f4428d636732c7209edd0"><span></span><span class="n">FMT_CHAR_TYPE_DEFAULT</span></span><span></span>
+<span class="cp">#define </span><span class="doxyrest-code-target target" id="doxid-fmt-bool-8h-1a5d6c253c852db153896d0b192eda374c"><span></span><span class="n">FMT_FALSE</span></span><span></span>
+<span class="cp">#define </span><span class="doxyrest-code-target target" id="doxid-parser-8c-1a9dd1f916781bce90f69e03d283ac299b"><span></span><span class="n">FMT_READ</span></span><span></span><span class="p">(</span><span class="n">_func_call</span><span class="p">)</span>
+<span class="cp">#define </span><span class="doxyrest-code-target target" id="doxid-util-8c-1a72f7691aa88ed4cb7de26bee6888bb81"><span></span><span class="n">FMT_SPEC_LEN_VALUE</span></span><span></span><span class="p">(</span><span class="n">__name</span><span class="p">)</span>
+<span class="cp">#define </span><span class="doxyrest-code-target target" id="doxid-fmt-spec-len-8h-1a72f7691aa88ed4cb7de26bee6888bb81"><span></span><span class="n">FMT_SPEC_LEN_VALUE</span></span><span></span><span class="p">(</span><span class="n">__name</span><span class="p">)</span>
+<span class="cp">#define </span><span class="doxyrest-code-target target" id="doxid-util-8c-1ac8e3e6caafbc82fd9c8a5d01b079a45a"><span></span><span class="n">FMT_SPEC_TYPE_VALUE</span></span><span></span><span class="p">(</span><span class="n">__name</span><span class="p">)</span>
+<span class="cp">#define </span><span class="doxyrest-code-target target" id="doxid-fmt-spec-type-8h-1ac8e3e6caafbc82fd9c8a5d01b079a45a"><span></span><span class="n">FMT_SPEC_TYPE_VALUE</span></span><span></span><span class="p">(</span><span class="n">__name</span><span class="p">)</span>
+<span class="cp">#define </span><span class="doxyrest-code-target target" id="doxid-parser-internal-8h-1a634bee7521c41edea9f820960a827c30"><span></span><span class="n">FMT_START_SYMBOL</span></span><span></span>
+<span class="cp">#define </span><span class="doxyrest-code-target target" id="doxid-fmt-bool-8h-1a76406e9dbe02d46cc439341d5836aa86"><span></span><span class="n">FMT_TRUE</span></span><span></span>
+<span class="cp">#define </span><a class="reference internal" href="group_fmt_spec.html#doxid-group-fmt-spec-1ga8808bbceb0038d1dc9cecbc5de8ff690"><span class="std std-ref">FMT_VALUE_NOT_DEFINED</span></a><span></span>
+<span class="cp">#define </span><a class="reference internal" href="group_fmt_spec.html#doxid-group-fmt-spec-1ga15038326b136a214ac01c816ecaeea23"><span class="std std-ref">FMT_VALUE_OUT_OF_LINE</span></a><span></span>
+<span class="cp">#define </span><span class="doxyrest-code-target target" id="doxid-util-internal-8h-1a19b67781dcf5536459d0b466bb0d56b8"><span></span><span class="n">INC_FMT</span></span><span></span><span class="p">()</span>
+<span class="cp">#define </span><span class="doxyrest-code-target target" id="doxid-util-8c-1ac780ab6418d53f60175f9ae4b7d569cc"><span></span><span class="n">TRY_PRINTF</span></span><span></span><span class="p">(...)</span></pre>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-global"></span><h2>Detailed Documentation<a class="headerlink" href="#detailed-documentation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="typedefs">
+<h3>Typedefs<a class="headerlink" href="#typedefs" title="Permalink to this headline">¶</a></h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-fmt-bool-8h-1a17ae672029ff4eef7aaf3332ac3955cb"><span id="index-1"></span><span></span><span class="k">typedef</span> <span class="kt">bool</span> <span class="n">fmt_bool</span></pre>
+<p>Builtin bool type</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-fmt-status-8h-1a93ff026c2005e85a470fba3c9847e812"><span id="index-2"></span><span></span><span class="k">typedef</span> <span class="k">enum</span> <a class="reference internal" href="enum_fmt_status.html#doxid-fmt-status-8h-1a799588c25c0aa0e01fed1ab04354b0be"><span class="std std-ref">fmt_status</span></a><span></span> <span class="n">fmt_status</span></pre>
+<p>Status codes</p>
+</div>
+</div>
+</div>
+
+
+            </div>
+
+        </section>
+
+        
+            <nav class="site-bottom-navigation" role="navigation">
+            
+                <a href="enum_fmt_status.html" class="btn btn--primary btn--next right"
+                    title="enum fmt_status" accesskey="n">
+                    Next
+                </a>
+            
+            
+                <a href="struct_fmt_spec.html" class="btn btn--primary btn--prev"
+                    title="struct fmt_spec" accesskey="p">
+                    Previous
+                </a>
+            
+            </nav>
+        
+
+        
+            <div class="source-link">
+            
+                
+            
+            </div>
+        
+
+
+
+    </main>
+
+    <footer class="site-footer">
+<div class="container">
+
+    <div role="contentinfo">
+        <p>
+                &copy; Copyright 2021, Maxim Menshikov.
+        </p>
+    </div>
+        <p>Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+        <a href="https://github.com/testthedocs/sphinx_redactor_theme">theme</a>
+        provided by <a href="https://testthedocs.org">TestTheDocs</a>. 
+
+</div>
+</footer>
+
+    
+
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/target-highlight.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme-min.js"></script> 
+</body>
+</html>

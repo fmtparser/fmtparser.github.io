@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <title>Simple API usage example</title>
+    
+
+    <link rel="stylesheet" href="_static/css/redactor.css" type="text/css" />
+
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+    
+    <link rel="stylesheet" href="_static/doxyrest-pygments.css" type="text/css" />
+    
+
+    
+    <link rel="index" title="Index" href="genindex.html"/>
+    <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="fmtparser  documentation" href="index.html"/>
+    <link rel="next" title="Parser API" href="group_fmt_parser.html"/>
+    <link rel="prev" title="Fmt Parser library" href="index.html"/> 
+</head>
+
+<body role="document">
+     
+
+    
+<a href="#" id="js-navigation-toggle" class="navigation-toggle">
+    <i class="mdi mdi-menu"></i><i class="mdi mdi-close"></i>
+</a>
+
+<section class="site-sidebar">
+
+<nav>
+
+
+    <a href="index.html" class="branding-link">
+    
+    
+    
+        <img src="_static/fmtparser.png" class="logo" />
+    
+    
+        
+        
+    
+    </a>
+
+    
+<section role="search">
+    <form action="search.html" method="get" class="site-searchform">
+        <input type="text" name="q" placeholder="Search in documentation" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+</section>
+
+
+
+    <section class="site-nav">
+    
+    
+        <p class="caption"><span class="caption-text">Core API</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Simple API usage example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_fmt_parser.html">Parser API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_fmt_util.html">Utility functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_fmt_spec.html">Format specifier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_fmt_spec_api.html">Specifier API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced topics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="global.html">Global Namespace</a></li>
+</ul>
+
+    
+    </section>
+
+</nav>
+
+</section>
+
+    <main class="site-main" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+<nav class="site-breadcrumbs">
+    <ul>
+    
+        <li>
+            <a href="index.html">Documentation</a> /
+        </li>
+        
+        <li class="site-breadcrumbs__leaf">Simple API usage example</li>
+    
+    </ul>
+</nav>
+        <section class="site-content">
+            <div class="container">
+                
+  <div class="section" id="simple-api-usage-example">
+<span id="example"></span><h1>Simple API usage example<a class="headerlink" href="#simple-api-usage-example" title="Permalink to this headline">¶</a></h1>
+<p>The following example demonstrates almost zero-effort method of parsing format
+string.</p>
+<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;fmt_parser.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;fmt_util.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">fmt_status</span>  <span class="n">rc</span><span class="p">;</span>
+    <span class="n">fmt_spec</span>    <span class="n">spec</span><span class="p">;</span>
+    <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">str</span> <span class="o">=</span> <span class="s">&quot;Hello, %157$02ld test %*s world!&quot;</span><span class="p">;</span>
+    <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">tmp</span> <span class="o">=</span> <span class="n">str</span><span class="p">;</span>
+
+    <span class="k">do</span>
+    <span class="p">{</span>
+        <span class="n">fmt_spec_init</span><span class="p">(</span><span class="o">&amp;</span><span class="n">spec</span><span class="p">);</span>
+        <span class="n">rc</span> <span class="o">=</span> <span class="n">fmt_read_one</span><span class="p">(</span><span class="o">&amp;</span><span class="n">tmp</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">spec</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">rc</span> <span class="o">==</span> <span class="n">FMT_EOK</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">fmt_spec_print</span><span class="p">(</span><span class="o">&amp;</span><span class="n">spec</span><span class="p">,</span> <span class="n">stdout</span><span class="p">);</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="n">fmt_read_is_ok</span><span class="p">(</span><span class="n">rc</span><span class="p">));</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+
+
+            </div>
+
+        </section>
+
+        
+            <nav class="site-bottom-navigation" role="navigation">
+            
+                <a href="group_fmt_parser.html" class="btn btn--primary btn--next right"
+                    title="Parser API" accesskey="n">
+                    Next
+                </a>
+            
+            
+                <a href="index.html" class="btn btn--primary btn--prev"
+                    title="Fmt Parser library" accesskey="p">
+                    Previous
+                </a>
+            
+            </nav>
+        
+
+        
+            <div class="source-link">
+            
+                
+            
+            </div>
+        
+
+
+
+    </main>
+
+    <footer class="site-footer">
+<div class="container">
+
+    <div role="contentinfo">
+        <p>
+                &copy; Copyright 2021, Maxim Menshikov.
+        </p>
+    </div>
+        <p>Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+        <a href="https://github.com/testthedocs/sphinx_redactor_theme">theme</a>
+        provided by <a href="https://testthedocs.org">TestTheDocs</a>. 
+
+</div>
+</footer>
+
+    
+
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/target-highlight.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme-min.js"></script> 
+</body>
+</html>

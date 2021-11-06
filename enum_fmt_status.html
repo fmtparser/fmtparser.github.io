@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <title>enum fmt_status</title>
+    
+
+    <link rel="stylesheet" href="_static/css/redactor.css" type="text/css" />
+
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+    
+    <link rel="stylesheet" href="_static/doxyrest-pygments.css" type="text/css" />
+    
+
+    
+    <link rel="index" title="Index" href="genindex.html"/>
+    <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="fmtparser  documentation" href="index.html"/>
+    <link rel="up" title="Global Namespace" href="global.html"/>
+    <link rel="prev" title="Global Namespace" href="global.html"/> 
+</head>
+
+<body role="document">
+     
+
+    
+<a href="#" id="js-navigation-toggle" class="navigation-toggle">
+    <i class="mdi mdi-menu"></i><i class="mdi mdi-close"></i>
+</a>
+
+<section class="site-sidebar">
+
+<nav>
+
+
+    <a href="index.html" class="branding-link">
+    
+    
+    
+        <img src="_static/fmtparser.png" class="logo" />
+    
+    
+        
+        
+    
+    </a>
+
+    
+<section role="search">
+    <form action="search.html" method="get" class="site-searchform">
+        <input type="text" name="q" placeholder="Search in documentation" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+</section>
+
+
+
+    <section class="site-nav">
+    
+    
+        <p class="caption"><span class="caption-text">Core API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="example.html">Simple API usage example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_fmt_parser.html">Parser API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_fmt_util.html">Utility functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_fmt_spec.html">Format specifier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_fmt_spec_api.html">Specifier API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced topics</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">enum fmt_status</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#detailed-documentation">Detailed Documentation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#enum-values">Enum Values</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="global.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="global.html#detailed-documentation">Detailed Documentation</a></li>
+</ul>
+</li>
+</ul>
+
+    
+    </section>
+
+</nav>
+
+</section>
+
+    <main class="site-main" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+<nav class="site-breadcrumbs">
+    <ul>
+    
+        <li>
+            <a href="index.html">Documentation</a> /
+        </li>
+        
+        <li>
+            <a href="global.html">Global Namespace</a> /
+        </li>
+        
+        <li class="site-breadcrumbs__leaf">enum fmt_status</li>
+    
+    </ul>
+</nav>
+        <section class="site-content">
+            <div class="container">
+                
+  <div class="section" id="enum-fmt-status">
+<span id="doxid-fmt-status-8h-1a799588c25c0aa0e01fed1ab04354b0be"></span><span id="index-0"></span><h1>enum fmt_status<a class="headerlink" href="#enum-fmt-status" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>Status codes <a class="reference internal" href="#details-fmt-status-8h-1a799588c25c0aa0e01fed1ab04354b0be"><span class="std std-ref">More…</span></a></p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;fmt_status.h&gt;</span><span class="cp"></span>
+
+<span class="k">enum</span> <span class="n">fmt_status</span> <span class="p">{</span>
+    <a class="reference internal" href="#doxid-fmt-status-8h-1a799588c25c0aa0e01fed1ab04354b0bea0d591900e6ca852c37bbea11413f2163"><span class="std std-ref">FMT_EOK</span></a><span></span><span class="p">,</span>
+    <a class="reference internal" href="#doxid-fmt-status-8h-1a799588c25c0aa0e01fed1ab04354b0bea9b6df49dfe4c3cc518bbdc95d4b575f2"><span class="std std-ref">FMT_EEOL</span></a><span></span><span class="p">,</span>
+    <a class="reference internal" href="#doxid-fmt-status-8h-1a799588c25c0aa0e01fed1ab04354b0beaa9aecfe58494f23618f9a953ba2861c8"><span class="std std-ref">FMT_EFAIL</span></a><span></span><span class="p">,</span>
+    <a class="reference internal" href="#doxid-fmt-status-8h-1a799588c25c0aa0e01fed1ab04354b0bea156d907eb519404ea7757ceb17a93d53"><span class="std std-ref">FMT_ESTATE</span></a><span></span><span class="p">,</span>
+    <a class="reference internal" href="#doxid-fmt-status-8h-1a799588c25c0aa0e01fed1ab04354b0bead68329819b3efcf6669f09e9565de643"><span class="std std-ref">FMT_EINVAL</span></a><span></span><span class="p">,</span>
+<span class="p">};</span></pre>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-fmt-status-8h-1a799588c25c0aa0e01fed1ab04354b0be"></span><h2>Detailed Documentation<a class="headerlink" href="#detailed-documentation" title="Permalink to this headline">¶</a></h2>
+<p>Status codes</p>
+<div class="section" id="enum-values">
+<h3>Enum Values<a class="headerlink" href="#enum-values" title="Permalink to this headline">¶</a></h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-fmt-status-8h-1a799588c25c0aa0e01fed1ab04354b0bea0d591900e6ca852c37bbea11413f2163"><span id="index-1"></span><span></span><span class="n">FMT_EOK</span></pre>
+<p>No error</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-fmt-status-8h-1a799588c25c0aa0e01fed1ab04354b0bea9b6df49dfe4c3cc518bbdc95d4b575f2"><span id="index-2"></span><span></span><span class="n">FMT_EEOL</span></pre>
+<p>End-of-line error</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-fmt-status-8h-1a799588c25c0aa0e01fed1ab04354b0beaa9aecfe58494f23618f9a953ba2861c8"><span id="index-3"></span><span></span><span class="n">FMT_EFAIL</span></pre>
+<p>Other error</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-fmt-status-8h-1a799588c25c0aa0e01fed1ab04354b0bea156d907eb519404ea7757ceb17a93d53"><span id="index-4"></span><span></span><span class="n">FMT_ESTATE</span></pre>
+<p>Invalid state. Mostly it means there is no part that is about to be read</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-fmt-status-8h-1a799588c25c0aa0e01fed1ab04354b0bead68329819b3efcf6669f09e9565de643"><span id="index-5"></span><span></span><span class="n">FMT_EINVAL</span></pre>
+<p>Invalid parameter</p>
+</div>
+</div>
+</div>
+
+
+            </div>
+
+        </section>
+
+        
+            <nav class="site-bottom-navigation" role="navigation">
+            
+            
+                <a href="global.html" class="btn btn--primary btn--prev"
+                    title="Global Namespace" accesskey="p">
+                    Previous
+                </a>
+            
+            </nav>
+        
+
+        
+            <div class="source-link">
+            
+                
+            
+            </div>
+        
+
+
+
+    </main>
+
+    <footer class="site-footer">
+<div class="container">
+
+    <div role="contentinfo">
+        <p>
+                &copy; Copyright 2021, Maxim Menshikov.
+        </p>
+    </div>
+        <p>Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+        <a href="https://github.com/testthedocs/sphinx_redactor_theme">theme</a>
+        provided by <a href="https://testthedocs.org">TestTheDocs</a>. 
+
+</div>
+</footer>
+
+    
+
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/target-highlight.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme-min.js"></script> 
+</body>
+</html>

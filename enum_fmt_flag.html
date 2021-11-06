@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <title>enum fmt_flag</title>
+    
+
+    <link rel="stylesheet" href="_static/css/redactor.css" type="text/css" />
+
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+    
+    <link rel="stylesheet" href="_static/doxyrest-pygments.css" type="text/css" />
+    
+
+    
+    <link rel="index" title="Index" href="genindex.html"/>
+    <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="fmtparser  documentation" href="index.html"/>
+    <link rel="up" title="Specifier API" href="group_fmt_spec_api.html"/>
+    <link rel="next" title="struct fmt_spec" href="struct_fmt_spec.html"/>
+    <link rel="prev" title="Specifier API" href="group_fmt_spec_api.html"/> 
+</head>
+
+<body role="document">
+     
+
+    
+<a href="#" id="js-navigation-toggle" class="navigation-toggle">
+    <i class="mdi mdi-menu"></i><i class="mdi mdi-close"></i>
+</a>
+
+<section class="site-sidebar">
+
+<nav>
+
+
+    <a href="index.html" class="branding-link">
+    
+    
+    
+        <img src="_static/fmtparser.png" class="logo" />
+    
+    
+        
+        
+    
+    </a>
+
+    
+<section role="search">
+    <form action="search.html" method="get" class="site-searchform">
+        <input type="text" name="q" placeholder="Search in documentation" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+</section>
+
+
+
+    <section class="site-nav">
+    
+    
+        <p class="caption"><span class="caption-text">Core API</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="example.html">Simple API usage example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_fmt_parser.html">Parser API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_fmt_util.html">Utility functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_fmt_spec.html">Format specifier</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="group_fmt_spec_api.html">Specifier API</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">enum fmt_flag</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#detailed-documentation">Detailed Documentation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#enum-values">Enum Values</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="group_fmt_spec_api.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="group_fmt_spec_api.html#detailed-documentation">Detailed Documentation</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced topics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="global.html">Global Namespace</a></li>
+</ul>
+
+    
+    </section>
+
+</nav>
+
+</section>
+
+    <main class="site-main" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+<nav class="site-breadcrumbs">
+    <ul>
+    
+        <li>
+            <a href="index.html">Documentation</a> /
+        </li>
+        
+        <li>
+            <a href="group_fmt_spec.html">Format specifier</a> /
+        </li>
+        
+        <li>
+            <a href="group_fmt_spec_api.html">Specifier API</a> /
+        </li>
+        
+        <li class="site-breadcrumbs__leaf">enum fmt_flag</li>
+    
+    </ul>
+</nav>
+        <section class="site-content">
+            <div class="container">
+                
+  <div class="section" id="enum-fmt-flag">
+<span id="doxid-group-fmt-spec-api-1ga5eb2c0200a9f50528e96f2bd27fb674c"></span><span id="index-0"></span><h1>enum fmt_flag<a class="headerlink" href="#enum-fmt-flag" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>Format specifier flag <a class="reference internal" href="#details-group-fmt-spec-api-1ga5eb2c0200a9f50528e96f2bd27fb674c"><span class="std std-ref">More…</span></a></p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;fmt_spec_api.h&gt;</span><span class="cp"></span>
+
+<span class="k">enum</span> <span class="n">fmt_flag</span> <span class="p">{</span>
+    <a class="reference internal" href="#doxid-group-fmt-spec-api-1gga5eb2c0200a9f50528e96f2bd27fb674cadac4d46d0015b3d480dbe2e0ce0cb124"><span class="std std-ref">FMT_FLAG_FIRST</span></a><span></span>              <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+    <a class="reference internal" href="#doxid-group-fmt-spec-api-1gga5eb2c0200a9f50528e96f2bd27fb674ca58d1c7d30e12a63e4f8408bb14a8dc59"><span class="std std-ref">FMT_FLAG_LEFT_ALIGN</span></a><span></span>         <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+    <a class="reference internal" href="#doxid-group-fmt-spec-api-1gga5eb2c0200a9f50528e96f2bd27fb674ca41f523f998fbba31a61c59e682f5fdf5"><span class="std std-ref">FMT_FLAG_PREPEND_PLUS</span></a><span></span><span class="p">,</span>
+    <a class="reference internal" href="#doxid-group-fmt-spec-api-1gga5eb2c0200a9f50528e96f2bd27fb674ca71dfc6d51408a41643a591bf8d7d2fcf"><span class="std std-ref">FMT_FLAG_PREPEND_SPACE</span></a><span></span><span class="p">,</span>
+    <a class="reference internal" href="#doxid-group-fmt-spec-api-1gga5eb2c0200a9f50528e96f2bd27fb674ca54c496eca933484baa2f5acfd6b934bd"><span class="std std-ref">FMT_FLAG_PREPEND_ZERO</span></a><span></span><span class="p">,</span>
+    <a class="reference internal" href="#doxid-group-fmt-spec-api-1gga5eb2c0200a9f50528e96f2bd27fb674ca3038d38300e739dc9f0b47704c5c6645"><span class="std std-ref">FMT_FLAG_THOUSANDS_GROUPING</span></a><span></span><span class="p">,</span>
+    <a class="reference internal" href="#doxid-group-fmt-spec-api-1gga5eb2c0200a9f50528e96f2bd27fb674ca6c4aca17bb479dc4afbb2386100c5e7b"><span class="std std-ref">FMT_FLAG_ALTERNATE</span></a><span></span><span class="p">,</span>
+    <a class="reference internal" href="#doxid-group-fmt-spec-api-1gga5eb2c0200a9f50528e96f2bd27fb674cacc2f0c2c34a2281eca16c4c35081552c"><span class="std std-ref">FMT_FLAG_LAST</span></a><span></span>               <span class="o">=</span> <span class="n">FMT_FLAG_ALTERNATE</span><span class="p">,</span>
+<span class="p">};</span></pre>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-group-fmt-spec-api-1ga5eb2c0200a9f50528e96f2bd27fb674c"></span><h2>Detailed Documentation<a class="headerlink" href="#detailed-documentation" title="Permalink to this headline">¶</a></h2>
+<p>Format specifier flag</p>
+<div class="section" id="enum-values">
+<h3>Enum Values<a class="headerlink" href="#enum-values" title="Permalink to this headline">¶</a></h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-group-fmt-spec-api-1gga5eb2c0200a9f50528e96f2bd27fb674cadac4d46d0015b3d480dbe2e0ce0cb124"><span id="index-1"></span><span></span><span class="n">FMT_FLAG_FIRST</span></pre>
+<p>The first flag in enumeration</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-group-fmt-spec-api-1gga5eb2c0200a9f50528e96f2bd27fb674ca58d1c7d30e12a63e4f8408bb14a8dc59"><span id="index-2"></span><span></span><span class="n">FMT_FLAG_LEFT_ALIGN</span></pre>
+<p>Left align flag</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-group-fmt-spec-api-1gga5eb2c0200a9f50528e96f2bd27fb674ca41f523f998fbba31a61c59e682f5fdf5"><span id="index-3"></span><span></span><span class="n">FMT_FLAG_PREPEND_PLUS</span></pre>
+<p>Prepend plus flag</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-group-fmt-spec-api-1gga5eb2c0200a9f50528e96f2bd27fb674ca71dfc6d51408a41643a591bf8d7d2fcf"><span id="index-4"></span><span></span><span class="n">FMT_FLAG_PREPEND_SPACE</span></pre>
+<p>Prepend space flag</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-group-fmt-spec-api-1gga5eb2c0200a9f50528e96f2bd27fb674ca54c496eca933484baa2f5acfd6b934bd"><span id="index-5"></span><span></span><span class="n">FMT_FLAG_PREPEND_ZERO</span></pre>
+<p>Prepend zero flag</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-group-fmt-spec-api-1gga5eb2c0200a9f50528e96f2bd27fb674ca3038d38300e739dc9f0b47704c5c6645"><span id="index-6"></span><span></span><span class="n">FMT_FLAG_THOUSANDS_GROUPING</span></pre>
+<p>Enable thousands grouping</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-group-fmt-spec-api-1gga5eb2c0200a9f50528e96f2bd27fb674ca6c4aca17bb479dc4afbb2386100c5e7b"><span id="index-7"></span><span></span><span class="n">FMT_FLAG_ALTERNATE</span></pre>
+<p>Enable alternate form</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-group-fmt-spec-api-1gga5eb2c0200a9f50528e96f2bd27fb674cacc2f0c2c34a2281eca16c4c35081552c"><span id="index-8"></span><span></span><span class="n">FMT_FLAG_LAST</span></pre>
+<p>Last flag</p>
+</div>
+</div>
+</div>
+
+
+            </div>
+
+        </section>
+
+        
+            <nav class="site-bottom-navigation" role="navigation">
+            
+                <a href="struct_fmt_spec.html" class="btn btn--primary btn--next right"
+                    title="struct fmt_spec" accesskey="n">
+                    Next
+                </a>
+            
+            
+                <a href="group_fmt_spec_api.html" class="btn btn--primary btn--prev"
+                    title="Specifier API" accesskey="p">
+                    Previous
+                </a>
+            
+            </nav>
+        
+
+        
+            <div class="source-link">
+            
+                
+            
+            </div>
+        
+
+
+
+    </main>
+
+    <footer class="site-footer">
+<div class="container">
+
+    <div role="contentinfo">
+        <p>
+                &copy; Copyright 2021, Maxim Menshikov.
+        </p>
+    </div>
+        <p>Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+        <a href="https://github.com/testthedocs/sphinx_redactor_theme">theme</a>
+        provided by <a href="https://testthedocs.org">TestTheDocs</a>. 
+
+</div>
+</footer>
+
+    
+
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/target-highlight.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme-min.js"></script> 
+</body>
+</html>

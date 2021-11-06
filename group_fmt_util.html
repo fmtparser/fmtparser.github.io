@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <title>Utility functions</title>
+    
+
+    <link rel="stylesheet" href="_static/css/redactor.css" type="text/css" />
+
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+    
+    <link rel="stylesheet" href="_static/doxyrest-pygments.css" type="text/css" />
+    
+
+    
+    <link rel="index" title="Index" href="genindex.html"/>
+    <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="fmtparser  documentation" href="index.html"/>
+    <link rel="next" title="Format specifier" href="group_fmt_spec.html"/>
+    <link rel="prev" title="Parser API" href="group_fmt_parser.html"/> 
+</head>
+
+<body role="document">
+     
+
+    
+<a href="#" id="js-navigation-toggle" class="navigation-toggle">
+    <i class="mdi mdi-menu"></i><i class="mdi mdi-close"></i>
+</a>
+
+<section class="site-sidebar">
+
+<nav>
+
+
+    <a href="index.html" class="branding-link">
+    
+    
+    
+        <img src="_static/fmtparser.png" class="logo" />
+    
+    
+        
+        
+    
+    </a>
+
+    
+<section role="search">
+    <form action="search.html" method="get" class="site-searchform">
+        <input type="text" name="q" placeholder="Search in documentation" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+</section>
+
+
+
+    <section class="site-nav">
+    
+    
+        <p class="caption"><span class="caption-text">Core API</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="example.html">Simple API usage example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_fmt_parser.html">Parser API</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Utility functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#detailed-documentation">Detailed Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#global-functions">Global Functions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="group_fmt_spec.html">Format specifier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_fmt_spec_api.html">Specifier API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Advanced topics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="global.html">Global Namespace</a></li>
+</ul>
+
+    
+    </section>
+
+</nav>
+
+</section>
+
+    <main class="site-main" role="main">
+        
+
+
+
+
+
+
+
+
+
+
+
+<nav class="site-breadcrumbs">
+    <ul>
+    
+        <li>
+            <a href="index.html">Documentation</a> /
+        </li>
+        
+        <li class="site-breadcrumbs__leaf">Utility functions</li>
+    
+    </ul>
+</nav>
+        <section class="site-content">
+            <div class="container">
+                
+  <div class="section" id="utility-functions">
+<span id="doxid-group-fmt-util"></span><span id="index-0"></span><h1>Utility functions<a class="headerlink" href="#utility-functions" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>Non-vital functions <a class="reference internal" href="#details-group-fmt-util"><span class="std std-ref">More…</span></a></p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="c1">// global functions</span>
+
+<a class="reference internal" href="enum_fmt_status.html#doxid-fmt-status-8h-1a799588c25c0aa0e01fed1ab04354b0be"><span class="std std-ref">fmt_status</span></a><span></span> <a class="reference internal" href="#doxid-group-fmt-util-1ga78dec0463ce743affa763beecbfde89f"><span class="std std-ref">fmt_spec_print</span></a><span></span><span class="p">(</span><a class="reference internal" href="struct_fmt_spec.html#doxid-structfmt-spec"><span class="std std-ref">fmt_spec</span></a><span></span><span class="o">*</span> <span class="n">spec</span><span class="p">,</span> <span class="kt">FILE</span><span class="o">*</span> <span class="n">file</span><span class="p">);</span>
+<span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <a class="reference internal" href="#doxid-group-fmt-util-1gaf34eeca324fbb5f9603f8df345e1e96e"><span class="std std-ref">fmt_spec_len2str</span></a><span></span><span class="p">(</span><a class="reference internal" href="enum_fmt_spec_len.html#doxid-group-fmt-spec-len-1ga418d74483195eface4dc3e0119fd4b4f"><span class="std std-ref">fmt_spec_len</span></a><span></span> <span class="n">len</span><span class="p">);</span>
+<span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <a class="reference internal" href="#doxid-group-fmt-util-1ga5557090a337d297ba6048742b740cf27"><span class="std std-ref">fmt_spec_type2str</span></a><span></span><span class="p">(</span><a class="reference internal" href="enum_fmt_spec_type.html#doxid-group-fmt-spec-type-1ga84eab3977aabc3ce9dbb2fb979adc2c3"><span class="std std-ref">fmt_spec_type</span></a><span></span> <span class="n">type</span><span class="p">);</span></pre>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-group-fmt-util"></span><h2>Detailed Documentation<a class="headerlink" href="#detailed-documentation" title="Permalink to this headline">¶</a></h2>
+<p>Non-vital functions</p>
+<div class="section" id="global-functions">
+<h3>Global Functions<a class="headerlink" href="#global-functions" title="Permalink to this headline">¶</a></h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-group-fmt-util-1ga78dec0463ce743affa763beecbfde89f"><span id="index-1"></span><a class="reference internal" href="enum_fmt_status.html#doxid-fmt-status-8h-1a799588c25c0aa0e01fed1ab04354b0be"><span class="std std-ref">fmt_status</span></a><span></span> <span class="n">fmt_spec_print</span><span class="p">(</span><a class="reference internal" href="struct_fmt_spec.html#doxid-structfmt-spec"><span class="std std-ref">fmt_spec</span></a><span></span><span class="o">*</span> <span class="n">spec</span><span class="p">,</span> <span class="kt">FILE</span><span class="o">*</span> <span class="n">file</span><span class="p">)</span></pre>
+<p>Print format specifier</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>spec</p></td>
+<td><p>The specifier</p></td>
+</tr>
+<tr class="row-even"><td><p>file</p></td>
+<td><p>File pointer</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>Status code</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-group-fmt-util-1gaf34eeca324fbb5f9603f8df345e1e96e"><span id="index-2"></span><span></span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">fmt_spec_len2str</span><span class="p">(</span><a class="reference internal" href="enum_fmt_spec_len.html#doxid-group-fmt-spec-len-1ga418d74483195eface4dc3e0119fd4b4f"><span class="std std-ref">fmt_spec_len</span></a><span></span> <span class="n">len</span><span class="p">)</span></pre>
+<p>Convert length to string</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>len</p></td>
+<td><p>The length specifier</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>String representation of length</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-group-fmt-util-1ga5557090a337d297ba6048742b740cf27"><span id="index-3"></span><span></span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">fmt_spec_type2str</span><span class="p">(</span><a class="reference internal" href="enum_fmt_spec_type.html#doxid-group-fmt-spec-type-1ga84eab3977aabc3ce9dbb2fb979adc2c3"><span class="std std-ref">fmt_spec_type</span></a><span></span> <span class="n">type</span><span class="p">)</span></pre>
+<p>Convert type to string</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p>The type specifier</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>String representation of length</p>
+</div>
+</div>
+</div>
+
+
+            </div>
+
+        </section>
+
+        
+            <nav class="site-bottom-navigation" role="navigation">
+            
+                <a href="group_fmt_spec.html" class="btn btn--primary btn--next right"
+                    title="Format specifier" accesskey="n">
+                    Next
+                </a>
+            
+            
+                <a href="group_fmt_parser.html" class="btn btn--primary btn--prev"
+                    title="Parser API" accesskey="p">
+                    Previous
+                </a>
+            
+            </nav>
+        
+
+        
+            <div class="source-link">
+            
+                
+            
+            </div>
+        
+
+
+
+    </main>
+
+    <footer class="site-footer">
+<div class="container">
+
+    <div role="contentinfo">
+        <p>
+                &copy; Copyright 2021, Maxim Menshikov.
+        </p>
+    </div>
+        <p>Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+        <a href="https://github.com/testthedocs/sphinx_redactor_theme">theme</a>
+        provided by <a href="https://testthedocs.org">TestTheDocs</a>. 
+
+</div>
+</footer>
+
+    
+
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/target-highlight.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme-min.js"></script> 
+</body>
+</html>
